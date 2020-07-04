@@ -1,9 +1,14 @@
 # require modules here
 
 def load_library(emoticon_file)
+<<<<<<< HEAD
   require 'yaml'
   new_hash = {}
   emoticons = YAML.load_file('lib/emoticons.yml')
+=======
+  new_hash = {}
+  emoticons = YAML.load_file('emoticons.yml')
+>>>>>>> 0a3acb9464d9eefea0c380437ebe609795c6a3c4
   emoticons.each do |key, element|
     new_hash[key] = {}
     new_hash[key][:english] = element.first
